@@ -1,0 +1,26 @@
+<table class="tablestriped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>LLave</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Documentos</th>
+            <th>Opción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of infoConsult">
+            <th>{{x.id}}</th>
+            <td>{{x.names}}</td>
+            <td>{{x.lastnames}}</td>
+            <td>{{x.mail}}</td>
+            <td>{{x.dni}}</td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button (click)="eliminar(x.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

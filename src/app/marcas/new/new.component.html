@@ -1,0 +1,14 @@
+<h1>Register Owner</h1> 
+<hr>
+<p>Names</p>
+<input type="text" [(ngModel)]="objJ.names" class="form-control" placeholder="Type names">
+<p>Lastnames</p>
+<input type="text" [(ngModel)]="objJ.lastnames" class="form-control" placeholder="Type lastnames">
+<p>DNI</p>
+<input type="text" [(ngModel)]="objJ.dni"class="form-control" placeholder="Type DNI">
+<p>Password</p>
+<input type="password"  [(ngModel)]="objJ.password" class="form-control" placeholder="Enter password">
+<p>e-mail</p>
+<input type="mail"  [(ngModel)]="objJ.mail" class="form-control" placeholder="Enter e-mail address">
+<hr>
+<button (click)="save()" class="btn btn-success">Submit</button>
